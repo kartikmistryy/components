@@ -14,7 +14,7 @@ function App() {
 
       <motion.div 
       animate={{
-        scaleY: drawerOpen ? 1 : 0
+        y: drawerOpen ? "100%" : "0"
       }}
       transition={{
         type: 'spring',
@@ -22,7 +22,7 @@ function App() {
         damping: 30
       }}
       className='w-full h-[350px] absolute bottom-0 bg-white flex flex-col justify-start p-5 items-center origin-bottom-right'>
-        <span className='w-[70px] rounded-xl h-2 bg-gray-200 border-[1px] border-[#eee]'></span>
+        <span className='w-[60px] rounded-xl h-2 bg-gray-200 border-[1px] border-[#eee]'></span>
 
         <span className='flex flex-col gap-1 mt-10'>
           <h1 className='text-xl font-semibold text-gray-800'>Drawer Component</h1>
