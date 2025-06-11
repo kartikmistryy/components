@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .map-image {
+    background-image:linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 30%
+    ), url('./map.webp');
+    background-size: 300%;
+  }
+
+  .map-image:nth-child(2){
+    background-position: 0% 33.3%, 50%;
+  }
+
+  .map-image:nth-child(3){
+    background-position: 20% 43.6%, 100%;
+
+  }
+}
