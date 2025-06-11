@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(114, 183, 223);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    min-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parent > div {
+    height: 400px;
+    width: 130px;
+    transition: all ease-in-out 0.3s;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.one {
+    background: url('https://images.pexels.com/photos/695782/pexels-photo-695782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.two {
+    background: url('https://images.pexels.com/photos/4652066/pexels-photo-4652066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.three {
+    background: url('https://images.pexels.com/photos/29589435/pexels-photo-29589435/free-photo-of-bustling-nightlife-in-bangkok-s-chinatown.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.four {
+    background: url('https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.five {
+    background: url('https://images.pexels.com/photos/342113/pexels-photo-342113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.six {
+    background: url('https://images.pexels.com/photos/1291766/pexels-photo-1291766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.seven {
+    background: url('https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.active {
+    width: 400px !important;
+    opacity: 1 !important; 
+    background-size: cover !important;
+}
