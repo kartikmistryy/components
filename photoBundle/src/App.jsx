@@ -79,7 +79,7 @@ function App() {
           <motion.div
           onClick={() => setActive(4)}
           style={{ backgroundImage: `url(${imageUrl[3]})`}}
-            className="w-[360px] h-[240px] bg-contain bg-center rounded-2xl border border-gray-200 absolute top-[56px] left-1/2 -translate-x-1/2 z-[5] hover:-translate-y-32 transition-all duration-300 cursor-pointer"
+            className="w-[360px] h-[240px] bg-contain bg-center rounded-2xl border border-gray-200 absolute top-[56px] left-1/2 -translate-x-1/2 z-[5] transition-all duration-300 cursor-pointer"
           />
         </motion.div>
 
