@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    font-family: "Trebuchet MS", "Verdana", sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body.burger-cursor {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='52' height='52'><text y='36' font-size='36'>🍔</text></svg>") 24 24, auto;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.eye-socket {
+    width: 62px;
+    height: 96px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    transition: transform 0.15s ease-out;
+}
+
+.eye-ball {
+    width: 26px;
+    height: 38px;
+    background: #0a0a0a;
+    border-radius: 50%;
+    transition: transform 0.15s ease-out;
+}
+.eye-pair {
+    width: 220px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px 6px;
+    justify-items: center;
+    align-items: center;
+}
+
+.eyebrow-row {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px;
+    margin-bottom: -26px;
+}
+
+.eyebrow {
+    width: 62px;
+    height: 32px;
+    background: transparent;
+    transform: rotate(0deg);
+    transform-origin: center center;
+    transition: transform 0.15s ease-out;
+    position: relative;
+}
+
+.eyebrow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-top: 6px solid #141414;
+    border-radius: 50% 50% 0 0;
+}
+
+.eyebrow + .eyebrow {
+    transform: rotate(0deg);
+}
+
+@media (max-width: 700px) {
+    .eye-socket {
+        width: 76px;
+        height: 56px;
+    }
+
+    .eye-ball {
+        width: 22px;
+        height: 32px;
+    }
+
+    .eye-pair {
+        width: 180px;
+    }
+
+    .eyebrow {
+        width: 76px;
+        height: 26px;
+    }
+}
